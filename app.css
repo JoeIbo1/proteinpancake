@@ -1,0 +1,26 @@
+.header {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ATNosjkdnF2AemJAevQjqPRLxBSo50YqMg&usqp=CAU);
+  background-size: contain;
+  background-position: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(24, 19, 24);
+  padding-top: 150px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.detail {
+  text-align: center;
+}
+
+.detail i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
