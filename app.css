@@ -1,70 +1,107 @@
 body {
-  background-color: rgb(105, 51, 32);
+  margin: 15px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.icon {
+main {
   display: grid;
-  grid-template-columns: auto auto auto;
-  text-align: center;
-  font-size: 20px;
+  grid-template-areas:
+    "icon icon"
+    "header header"
+    "nav article"
+    "aside aside"
+    "footer footer";
+  grid-template-rows: 5vh 30vh 55vh 40vh 10vh;
 }
+
+.icon-top {
+  grid-area: icon;
+  text-align: center;
+  background-color:burlywood;
+}
+
+.icon-top i {
+  padding: 1em 5em 1em 5em;
+  text-align: center;
+}
+
+
 
 header {
+  grid-area: header;
+  background-color: burlywood;
   text-align: center;
+  border: 1px solid #000;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
+section{
+  grid-area: section;
 }
 
-.grid-item1 {
-  background-color: blueviolet;
+nav {
+  grid-area: nav;
+  background-color: burlywood;
+  border: 1px solid #000;
 }
 
-.grid-item2 {
-  background-color: rgb(166, 161, 170);
+
+li{
+  margin: 15px;
+}
+article {
+  grid-area: article;
+  background-color: burlywood;
+  border: 1px solid #000;
+}
+
+aside {
+  grid-area: aside;
+  background-color: burlywood;
+  border: 1px solid #000;
+  
 }
 
 footer {
+  grid-area: footer;
+  background-color: burlywood;
   text-align: center;
-  background-color: dimgrey;
-  bottom: 0;
-  position: absolute;
+  line-height: 0.5;
+  border: 1px solid #000;
+}
+
+aside table{
+  padding: 0 35%;
+  border: 1px solid #000;
+
+}
+
+ p{
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
   width: 100%;
-  max-height: 100px;
-  line-height: 0.9;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
 }
 
-/* footer a {
-  display: grid;
-  grid-template-columns: max-content;
-  text-align: center;
-} */
-
-/* .header {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ATNosjkdnF2AemJAevQjqPRLxBSo50YqMg&usqp=CAU);
-  background-size: contain;
-  background-position: center;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(24, 19, 24);
-  padding-top: 150px;
+th {
+  background-color: #f2f2f2;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
 }
 
-.icon {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: #fff;
 }
 
-.detail {
-  text-align: center;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
-
-.detail i {
-  font-size: 20px;
-  margin-bottom: 5px;
-} */
