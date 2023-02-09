@@ -1,8 +1,13 @@
 body {
-  margin: 15px;
+  margin: 50px;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  border: double 10px rgba(43, 27, 9, 0.623);
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgb(116, 86, 58), rgb(59, 51, 24));
 }
+
+
 
 main {
   display: grid;
@@ -12,37 +17,46 @@ main {
     "nav article"
     "aside aside"
     "footer footer";
-  grid-template-rows: 5vh 30vh 55vh 40vh 10vh;
+  grid-template-rows: 5vh 40vh 70vh 45vh 10vh;
+  background-color: rgba(238, 238, 245, 0.74);
+  border-radius: 25px;
+  border:  5px solid saddlebrown;
+  padding: 10px 10px 10px 10px;
 }
 
 .icon-top {
   grid-area: icon;
   text-align: center;
-  background-color:burlywood;
+  
 }
 
 .icon-top i {
-  padding: 1em 5em 1em 5em;
+  padding: 1em 2em 1em 5em;
   text-align: center;
+  font-size:larger;
 }
 
 
 
 header {
   grid-area: header;
-  background-color: burlywood;
   text-align: center;
-  border: 1px solid #000;
+  
 }
 
-section{
-  grid-area: section;
+header img{
+  height: 250px;
+  border-radius: 25px;
+ 
 }
+
+
 
 nav {
   grid-area: nav;
-  background-color: burlywood;
   border: 1px solid #000;
+  border-radius: 25px;
+  padding: 1em 3em 1em 3em;
 }
 
 
@@ -51,29 +65,34 @@ li{
 }
 article {
   grid-area: article;
-  background-color: burlywood;
   border: 1px solid #000;
+  border-radius: 25px;
+  padding: 1em 3em 1em 3em;
 }
 
 aside {
   grid-area: aside;
-  background-color: burlywood;
   border: 1px solid #000;
-  
+  border-radius: 25px;
+  padding: 1em 2em 1em 5em;
 }
 
 footer {
   grid-area: footer;
-  background-color: burlywood;
   text-align: center;
-  line-height: 0.5;
-  border: 1px solid #000;
+  line-height: 0.5; 
+}
+
+footer a{
+  padding: 1em 2em 1em 5em;
+  text-align: center;
 }
 
 aside table{
   padding: 0 35%;
   border: 1px solid #000;
-
+  border-radius: 25px;
+  
 }
 
  p{
@@ -84,24 +103,34 @@ table {
   border-collapse: collapse;
   width: 100%;
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+  border-radius: 25px;
+  
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #945f5f9a;
   color: #333;
-  border: 1px solid #ddd;
+  border: 1px solid #111010;
   padding: 8px;
   text-align: left;
   font-weight: bold;
 }
 
 td {
-  border: 1px solid #ddd;
+  border: 1px solid #140c0c;
   padding: 8px;
   text-align: left;
-  background-color: #fff;
+  background-color: #e273732f;
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+ul{
+  list-style:circle;
+}
+
+h2{
+  text-align: center;
 }
