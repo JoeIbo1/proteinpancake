@@ -1,4 +1,48 @@
-.header {
+body {
+  background-color: rgb(105, 51, 32);
+}
+
+.icon {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item1 {
+  background-color: blueviolet;
+}
+
+.grid-item2 {
+  background-color: rgb(166, 161, 170);
+}
+
+footer {
+  text-align: center;
+  background-color: dimgrey;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  max-height: 100px;
+  line-height: 0.9;
+}
+
+/* footer a {
+  display: grid;
+  grid-template-columns: max-content;
+  text-align: center;
+} */
+
+/* .header {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ATNosjkdnF2AemJAevQjqPRLxBSo50YqMg&usqp=CAU);
   background-size: contain;
   background-position: center;
@@ -23,4 +67,4 @@
 .detail i {
   font-size: 20px;
   margin-bottom: 5px;
-}
+} */
